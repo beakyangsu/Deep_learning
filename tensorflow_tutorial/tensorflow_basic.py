@@ -8,6 +8,7 @@ Created on Mon Aug  7 21:02:07 2017
 from tensorflow.examples.tutorials.mnist import input_data
 mnist = input_data.read_data_sets("MNIST_data/", one_hot=True)
 #download data sets
+#take about 30 minuites to get downloaded 
 
 import tensorflow as tf
 
