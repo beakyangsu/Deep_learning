@@ -15,7 +15,7 @@ x_data = xy[:, 0:-1]
 y_data = xy[:, [-1]]
 
 
-print(x_data.shape, x_data, len(x_data))
+print(x_data.shape, x_data, len(x_data), len(x_data[0]))
 print(y_data.shape, y_data)
 
 
