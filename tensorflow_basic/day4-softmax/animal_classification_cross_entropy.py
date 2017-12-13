@@ -43,7 +43,7 @@ with tf.Session() as sess:
         sess.run(optimizer, feed_dict={x:x_data, y:y_data})
         if step % 20 == 0:
             loss, acc = sess.run([cost, accuracy], feed_dict = {x:x_data, y: y_data})
-            print("step,{:5}\tLoss: {:3}\tAcc: {:.2%}".format(step,loss,acc))
+            print("step :{:5}\tLoss: {:3}\tAcc: {:.2%}".format(step,loss,acc))
             
     pred = sess.run(prediction, feed_dict={x:x_data})
     for p, y in zip(pred, y_data.flatten()) :
