@@ -77,7 +77,7 @@ if __name__=='__main__':
     x_test_std=sc.transform(x_test) # regulation x_test
     
     
-    ml=SVC(kernel='sigmoid', C=10.0, gamma=0.10, random_state=0)
+    ml=SVC(kernel='linear', C=10.0, gamma=0.10, random_state=0)
     ml.fit(x_train_std, y_train)
     y_pred = ml.predict(x_test_std)
     
